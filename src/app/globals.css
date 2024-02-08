@@ -1,33 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: Zen Maru Gothic;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  /* ブログのボディのスタイリング */
+  .a-styles {
+    @apply underline text-[#00f]
+  }
+  .ul-styles {
+    @apply list-disc ml-4
+  }
+  .ol-styles {
+    @apply list-decimal ml-4
+  }
+  .hr-styles {
+    @apply mt-2
+  }
+  .h2-styles {
+    @apply text-4xl font-bold m-[2rem_0] [border-bottom:solid_4px_#ffebd9] pl-4
+  }
+  .h3-styles {
+    @apply text-3xl font-bold m-[1.5rem_0] [border-left:solid_6px_#ffebd9] rounded-md pl-2
+  }
+  .p-styles {
+    @apply mt-4
+  }
+  .codeblock-styles {
+    @apply overflow-x-auto my-4 rounded-md
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  background-color: #ffebd9;
+}
+div[data-filename] {
+  @apply mt-4;
+}
+div[data-filename] > span {
+  @apply inline-block bg-[rgba(255,235,217,0.6)] text-center text-[#4b4b4b] py-1 px-4 rounded-t-lg;
+}
+div[data-filename] > pre {
+  margin-top: 0px;
+  border-top-left-radius: 0px;
 }

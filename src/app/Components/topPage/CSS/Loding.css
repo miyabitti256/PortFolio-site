@@ -1,0 +1,28 @@
+.cover{
+    transition: transform 3s ease-in-out;
+}
+.cover.active {
+    animation: slideRightToLeft 3s ease-in-out;
+}
+.PortFolio {
+    animation: grow 5.4s ease-in-out;
+    font-weight: 900;
+    opacity: 0;
+}
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    40%, 60%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes grow {
+    0% { font-size: 32px; opacity: 0; }
+    75% { font-size: 88px; opacity: 1;}
+    100% { font-size: 88px; opacity: 1; }
+   }
+   
