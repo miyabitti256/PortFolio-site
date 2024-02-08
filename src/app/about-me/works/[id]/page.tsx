@@ -23,7 +23,7 @@ const page = async(context:any) => {
         <div className='bg-white max-w-[865px] m-[1rem_auto] p-8 rounded-2xl [box-shadow:inset_4px_4px_4px_rgba(0,0,0,25%)]'>
             {Blog.thumbnail ? (
                 <div className='flex justify-center'>
-                    <Image className='[border:solid_1px_#ddd]' src={`${Blog.thumbnail.url}`} width={865} height={486.5} alt='thumbnail' />
+                    <Image className='[border:solid_1px_#ddd] m-[1rem_0]' src={`${Blog.thumbnail.url}`} width={865} height={486.5} alt='thumbnail' />
                 </div>
             ) : (null)}
             <BlogBody body={Blog.body} />

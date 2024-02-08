@@ -3,23 +3,23 @@ import Header from '../Components/Header'
 import Image from 'next/image'
 import { getBlogByCategory } from '../../../libs/client'
 import Link from 'next/link'
-import Spacer from '../Components/Spacer'
+import Footer from '../Components/Footer'
 
 const page = async() => {
   const Works = await getBlogByCategory('mln-z35z00dd');
   return (
     <div>
       <Header />
-      <section>
+      <section className='p-4'>
         <h1 className='mt-12 flex justify-center font-ZenMaruGothic font-black text-4xl'>私について</h1>
         <p className='mt-2 flex justify-center font-ZenMaruGothic font-bold text-xl'>About</p>
-        <div className='mt-12 flex justify-center font-ZenMaruGothic font-bold'>
-          <span className='flex items-center'>
+        <div className='mt-12 md:flex justify-center font-ZenMaruGothic font-bold'>
+          <span className='flex justify-center items-center'>
             <img className='rounded-full' src={'https://pbs.twimg.com/profile_images/1751632570893393920/b6WEw3TV_400x400.jpg'} width={150} height={150} alt='my-icon'></img>
           </span>
-          <span className='max-w-[400px] ml-16'>
-            <p className='flex justify-center text-2xl'>miyabitti(ピーマン)</p>
-            <ul className='list-disc'>
+          <span className='md:max-w-[400px] md:ml-16'>
+            <p className='flex justify-center text-2xl m-[1rem_auto] md:m-0'>miyabitti(ピーマン)</p>
+            <ul className='list-disc w-[65%] md:w-[100%] m-[auto]'>
               <li>19歳</li>
               <li>ニート</li>
               <li>秋田生まれ秋田育ち 秋田は災害少ないし子育てしやすいしで住みやすくていいところだぞ！！！</li>
@@ -27,9 +27,9 @@ const page = async() => {
               <li>Pythonかなんかのバックエンドも勉強したいなと考えているがJavaScriptもある程度マスターしたわけじゃないので手が出せていない。</li>
               <li>趣味はFPSやサンドボックスゲーム。他にネット麻雀、将棋観戦、競馬(まだ賭けられない)</li>
             </ul>
-            <span className='flex mt-4'>
-              <a href='https://twitter.com/miyabitti_sub'><Image src={'/img/twitter-icon.svg'} width={24} height={24} alt='twitter-icon'></Image></a>
-              <a href="https://github.com/miyabitti256"><Image src={'/img/Github-icon.svg'} width={24} height={24} alt='Github-icon'></Image></a>
+            <span className='flex justify-center w-full mt-4'>
+              <a href='https://twitter.com/miyabitti_sub'><Image src={'/img/twitter-icon.svg'} width={24} height={24} alt='twitter-icon' className='hover:opacity-50'></Image></a>
+              <a href="https://github.com/miyabitti256"><Image src={'/img/Github-icon.svg'} width={24} height={24} alt='Github-icon' className='hover:opacity-50'></Image></a>
             </span>
           </span>
         </div>
@@ -91,11 +91,11 @@ const page = async() => {
             </li>
           </ul>
         </div>
-        <div className='flex justify-center mt-8 font-ZenMaruGothic'>
+        <div className='flex justify-center mt-8 font-ZenMaruGothic p-[0_1.5rem]'>
           <p className='font-bold'>これらの言語、フレームワークを使用することができます。</p>
         </div>
       </section>
-      <Spacer></Spacer>
+      <Footer />
     </div>
   )
 }

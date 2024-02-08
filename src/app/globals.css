@@ -13,7 +13,7 @@
 @layer components {
   /* ブログのボディのスタイリング */
   .a-styles {
-    @apply underline text-[#00f]
+    @apply underline text-[#00f] break-all w-full
   }
   .ul-styles {
     @apply list-disc ml-4
@@ -24,11 +24,14 @@
   .hr-styles {
     @apply mt-2
   }
+  .img-styles{
+    @apply m-[1rem_0]
+  }
   .h2-styles {
-    @apply text-4xl font-bold m-[2rem_0] [border-bottom:solid_4px_#ffebd9] pl-4
+    @apply text-2xl md:text-3xl font-bold [border-bottom:solid_4px_#ffebd9] m-[1rem_0] pb-2
   }
   .h3-styles {
-    @apply text-3xl font-bold m-[1.5rem_0] [border-left:solid_6px_#ffebd9] rounded-md pl-2
+    @apply text-[1.1rem] md:text-2xl font-bold m-[1.5rem_0] [border-left:solid_6px_#ffebd9] rounded-md pl-2
   }
   .p-styles {
     @apply mt-4 leading-7
