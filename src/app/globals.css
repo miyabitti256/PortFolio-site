@@ -31,7 +31,7 @@
     @apply text-3xl font-bold m-[1.5rem_0] [border-left:solid_6px_#ffebd9] rounded-md pl-2
   }
   .p-styles {
-    @apply mt-4
+    @apply mt-4 leading-7
   }
   .codeblock-styles {
     @apply overflow-x-auto my-4 rounded-md

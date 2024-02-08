@@ -28,7 +28,7 @@ const page = async() => {
               <li>趣味はFPSやサンドボックスゲーム。他にネット麻雀、将棋観戦、競馬(まだ賭けられない)</li>
             </ul>
             <span className='flex mt-4'>
-              <a href='https://twitter.com/miyabittisub'><Image src={'/img/twitter-icon.svg'} width={24} height={24} alt='twitter-icon'></Image></a>
+              <a href='https://twitter.com/miyabitti_sub'><Image src={'/img/twitter-icon.svg'} width={24} height={24} alt='twitter-icon'></Image></a>
               <a href="https://github.com/miyabitti256"><Image src={'/img/Github-icon.svg'} width={24} height={24} alt='Github-icon'></Image></a>
             </span>
           </span>
@@ -90,6 +90,9 @@ const page = async() => {
               <p>TailwindCSS</p>
             </li>
           </ul>
+        </div>
+        <div className='flex justify-center mt-8 font-ZenMaruGothic'>
+          <p className='font-bold'>これらの言語、フレームワークを使用することができます。</p>
         </div>
       </section>
       <Spacer></Spacer>
