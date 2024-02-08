@@ -42,6 +42,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 body{
   background-color: #ffebd9;
