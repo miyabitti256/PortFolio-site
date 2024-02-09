@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PortFolio",
-  description: "ポートフォリオサイト",
+  title: "PortFolio-miyabitti",
+  description: "miyabittiのポートフォリオサイト。 プログラミング初心者がNext.js、microCMSを使って作成しました。",
 };
 
 export default function RootLayout({
