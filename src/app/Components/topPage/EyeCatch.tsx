@@ -8,7 +8,7 @@ const EyeCatch = () => {
   return (
     <>
       <div className="eyecatch max-w-[1200px] h-[100vh] overflow-hidden m-[auto] relative">
-        <div className="container p-6 [text-shadow:4px_4px_4px_rgba(0,0,0,25%)] absolute top-[45%] md:top[50%] translate-y-[-50%] left-[5%] md:left-0 z-10">
+        <div className="container p-6 font-Inter [text-shadow:4px_4px_4px_rgba(0,0,0,25%)] absolute top-[45%] md:top[50%] translate-y-[-50%] left-[5%] md:left-0 z-10">
           <h2 className='welcome w-[fit-content] font-extrabold text-[48px] md:text-[96px] text-[#573cff]'>Welcome</h2>
           <div className='flex font-extrabold w-[fit-content]'>
             <h2 className='to-my text-[24px] md:text-[48px] translate-y-[24px] md:translate-y-[48px]'>to My</h2>
