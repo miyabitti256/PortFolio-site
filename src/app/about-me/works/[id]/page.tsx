@@ -1,9 +1,10 @@
 import React from 'react'
-import { BlogContents, getBlog, getDetail } from '../../../../../libs/client'
 import Image from 'next/image';
 import Header from '@/app/Components/Header';
 import BlogBody from '@/app/Components/Works/BlogBody';
-import { syntaxhighlight } from '../../../../../libs/syntaxhighlight';
+import { BlogContents } from '@/types/client_type';
+import { syntaxhighlight } from '@/libs/syntaxhighlight';
+import { getBlog, getDetail } from '@/libs/client';
 
 export async function generateStaticParams() {
     const Blog = await getBlog();

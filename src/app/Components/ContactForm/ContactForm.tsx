@@ -1,5 +1,5 @@
 "use client"
-import { ContactFormData } from '@/app/types/ContactForm';
+import { ContactFormData } from '@/types/ContactForm';
 import { Backdrop, Button, CircularProgress, TextField } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
