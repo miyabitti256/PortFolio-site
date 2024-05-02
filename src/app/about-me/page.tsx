@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Image from 'next/image'
-import { getBlogByCategory } from '../../../libs/client'
+import { getBlogByCategory } from '../../libs/client'
 import Link from 'next/link'
 import Footer from '../Components/Footer'
 

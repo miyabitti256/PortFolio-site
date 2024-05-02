@@ -1,7 +1,7 @@
 // コピｐ……参考元リンク https://codeseterpie.com/blog/e91oc4aaef58/
 import hljs, { HighlightResult } from "highlight.js";
 import { load } from "cheerio";
-import { BlogContents } from "./client";
+import { BlogContents } from "@/types/client_type";
 
 export function syntaxhighlight (data:BlogContents) {
         const $ = load(data.body);
