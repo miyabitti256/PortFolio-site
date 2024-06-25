@@ -7,6 +7,7 @@ import Footer from '../Components/Footer'
 
 const page = async() => {
   const Works = await getBlogByCategory('mln-z35z00dd');
+  console.log(Works)
   return (
     <div>
       <Header />
@@ -38,6 +39,9 @@ const page = async() => {
         <h1 className='mt-12 flex justify-center font-ZenMaruGothic font-black text-4xl'>作品</h1>
         <p className='mt-2 flex justify-center font-ZenMaruGothic font-bold text-xl'>Works</p>
         <div className='flex flex-wrap m-[3rem_auto] max-w-[865px]'>
+          {Works.contents.map((w) => (
+            w.body
+          ))}
           {Works.contents.map((works) => (
             <div key={works.id} className='m-[16px_auto]'>
               {works.thumbnail ? (
